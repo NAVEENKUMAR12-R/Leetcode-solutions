@@ -1,0 +1,15 @@
+class Solution {
+public:
+    bool isPowerOfFour(int n) {
+      if(n==1)
+            {
+                return true;
+            }
+        else if(n>0)
+        {
+            double i=log(n)/log(4);
+            return i==trunc(i);
+        }
+        return 0;
+    }
+};
